@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <a class="btn btn-default" href="/">Back to Users</a>
+    <hr>
+    <h2 class="page-header">{{ user.username }}</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Password: {{ user.password }}</li>
+        <li class="list-group-item">Create date: {{ user.dateCreate|date('Y-m-d H:i:s')}}</li>
+        <li class="list-group-item">ID: {{ user.id }}</li>
+    </ul>
+
+    <p>
+        Bla bla bla.....
+    </p>
+
+{% endblock %}
